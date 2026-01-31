@@ -1,4 +1,4 @@
-name: mainBranch_workflow33
+name: mainBranch_workflow444
 on:
    workflow_dispatch:
 jobs:
@@ -6,15 +6,15 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-        - name: 'mainBranch44'
-          run: echo 'mainBranch 44'
-        - name: 'mycorn55'
-          run: echo 'mainBranch 55' 
+        - name: 'mainBranch4444'
+          run: echo 'mainBranch 4444'
+        - name: 'mycorn5555'
+          run: echo 'mainBranch 5555' 
   second-workflow:
     runs-on: 'windows'
     needs: first-workflow
     steps:
-         - name: ndJobSteps=666
+         - name: ndJobSteps=666666
            run: echo 'fuck...'       
 
 
