@@ -1,5 +1,6 @@
 name: first_workflow
-on: [push]
+on:
+    workflow_dispatch:
 jobs:
   first-job:
     runs-on: 'ubuntu-latest'
