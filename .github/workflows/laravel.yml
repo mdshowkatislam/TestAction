@@ -1,11 +1,12 @@
-name: mainBranch_workflow
+name: mainBranch_workflow2
 on:
     push:
         branches:
             - main
 jobs:
   first-job:
-    runs-on: 'ubuntu-latest'
+    runs-on: windows-latest
+
     steps:
         - name: 'mainBranch4'
           run: echo 'mainBranch 4'
