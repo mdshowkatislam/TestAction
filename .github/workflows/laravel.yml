@@ -1,16 +1,14 @@
 name: corn_workflow
 on:
     schedule:
-        - cron: '*/2 * * * *'
+        - cron: '*/1 * * * *'
 jobs:
   first-job:
     runs-on: 'ubuntu-latest'
     steps:
         - name: 'mycorn4'
-          run: |
-            echo 'corn world 4'
-            echo 'corn world 5'
+          run: echo 'corn world 4'
         - name: 'mycorn5'
-          run: echo 'corn world 6' 
+          run: echo 'corn world 5' 
 
 
