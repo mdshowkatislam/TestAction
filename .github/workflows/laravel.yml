@@ -1,13 +1,16 @@
-name: first_workflow
+name: corn_workflow
 on:
-    workflow_dispatch:
+    schedule:
+        - cron: '*/2 * * * *'
 jobs:
   first-job:
     runs-on: 'ubuntu-latest'
     steps:
-        - name: 'fuck4'
-          run: echo 'hello world 4'
-        - name: 'fuck5'
-          run: echo 'hello world 5' 
+        - name: 'mycorn4'
+          run: |
+            echo 'corn world 4'
+            echo 'corn world 5'
+        - name: 'mycorn5'
+          run: echo 'corn world 6' 
 
 
