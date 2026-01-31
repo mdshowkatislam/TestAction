@@ -5,9 +5,9 @@ jobs:
   first-job:
     runs-on: 'ubuntu-latest'
     steps:
-        - name: 'fuck1'
-          run: echo 'hello world'
-        - name: 'fuck2'
-          run: echo 'hello world 2' 
+        - name: 'fuck4'
+          run: echo 'hello world 4'
+        - name: 'fuck5'
+          run: echo 'hello world 5' 
 
 
