@@ -1,10 +1,8 @@
 name: mainBranch_workflow2
 on:
-    push:
-        branches:
-            - main
+   workflow_dispatch:
 jobs:
-  first-job:
+  first-workflow:
     runs-on: windows-latest
 
     steps:
@@ -12,10 +10,11 @@ jobs:
           run: echo 'mainBranch 4'
         - name: 'mycorn5'
           run: echo 'mainBranch 5' 
-  Second-job:
+  second-workflow:
     runs-on: 'windows'
+    needs: first-workflow
     steps:
-         - name: ndJobSteps 1
+         - name: ndJobSteps=111
            run: echo 'fuck...'       
 
 
