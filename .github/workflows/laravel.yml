@@ -1,4 +1,4 @@
-name: corn_workflow
+name: korn_workflow
 on:
     schedule:
         - cron: '*/1 * * * *'
